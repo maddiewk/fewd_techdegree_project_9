@@ -1,7 +1,7 @@
 .header {
-  background-image: url('../images/mountain-cartoon.png');
-  // background-image: url('../images/bridge_circle.jpeg');
-  // background-image: url('../images/dawn.jpg');
+  // background-image: url('../images/blue_mountains.jpg');
+  // background-image: url('../images/lights.jpg');
+  background-image: url('../images/dawn.jpg');
 
 
   background-repeat: no-repeat;
@@ -11,12 +11,16 @@
 }
 
 .title {
-  text-align: center;
+  text-align: right;
   padding-top: 400px;
+  margin-right: 15px;
 }
 
 .nav {
   @include grid;
+  border: 1px solid $border;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px $border;
   width: 85%;
   margin: 0 auto;
   padding-top: 10px;
@@ -32,6 +36,8 @@
 
 .links li{
   display: inline-block;
+  box-shadow: -5px -2px 2px grey;
+  padding: 3px;
   @extend %no-bullets;
   &:hover {
     cursor: pointer;
@@ -42,4 +48,11 @@
 .links a {
   color: $white;
   @extend %no-underline;
+}
+
+.cite {
+  color: $white;
+  & a {
+    color: $white;
+  }
 }

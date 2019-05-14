@@ -359,7 +359,7 @@ body {
 }
 
 .header {
-  background-image: url("../images/mountain-cartoon.png");
+  background-image: url("../images/dawn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 660px;
@@ -367,12 +367,16 @@ body {
 }
 
 .title {
-  text-align: center;
+  text-align: right;
   padding-top: 400px;
+  margin-right: 15px;
 }
 
 .nav {
   display: grid;
+  border: 1px solid #BAAA8F;
+  border-radius: 5px;
+  box-shadow: 10px 5px 5px #BAAA8F;
   width: 85%;
   margin: 0 auto;
   padding-top: 10px;
@@ -390,6 +394,8 @@ body {
 
 .links li {
   display: inline-block;
+  box-shadow: -5px -2px 2px grey;
+  padding: 3px;
 }
 .links li:hover {
   cursor: pointer;
@@ -397,6 +403,13 @@ body {
 }
 
 .links a {
+  color: #FFF;
+}
+
+.cite {
+  color: #FFF;
+}
+.cite a {
   color: #FFF;
 }
 
