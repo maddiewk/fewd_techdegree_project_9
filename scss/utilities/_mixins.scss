@@ -1,0 +1,23 @@
+@mixin flexbox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin grid {
+  display: grid;
+}
+
+// mixin for media queries
+@mixin media-qry($point) {
+  @if $point == 'large' {
+    @media(min-width: $large) {
+      @content;
+    }
+  }
+  @else if $point == 'med' {
+    @media(min-width: $med) {
+      @content;
+    }
+  }
+}

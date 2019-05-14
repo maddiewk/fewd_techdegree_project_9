@@ -1,0 +1,45 @@
+.header {
+  background-image: url('../images/mountain-cartoon.png');
+  // background-image: url('../images/bridge_circle.jpeg');
+  // background-image: url('../images/dawn.jpg');
+
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 660px;
+  padding-top: 40px;
+}
+
+.title {
+  text-align: center;
+  padding-top: 400px;
+}
+
+.nav {
+  @include grid;
+  width: 85%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.links {
+  @include flexbox;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+.links li{
+  display: inline-block;
+  @extend %no-bullets;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.5;
+  }
+}
+
+.links a {
+  color: $white;
+  @extend %no-underline;
+}
