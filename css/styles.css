@@ -353,17 +353,13 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
-.title h1,
-.title p {
-  font-family: "Yeon Sung", cursive;
-}
-
 .header {
-  background-image: url("../images/dawn.jpg");
+  background-image: url("../images/wall_art.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: contain;
   height: 660px;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .title {
@@ -373,9 +369,8 @@ body {
 }
 
 .nav {
-  display: grid;
   border: 1px solid #BAAA8F;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 10px 5px 5px #BAAA8F;
   width: 85%;
   margin: 0 auto;
@@ -402,10 +397,6 @@ body {
   opacity: 0.5;
 }
 
-.links a {
-  color: #FFF;
-}
-
 .cite {
   color: #FFF;
 }
@@ -416,6 +407,10 @@ body {
 .container {
   width: 100%;
   height: 20rem;
+}
+
+.contact a {
+  color: black;
 }
 
 /*# sourceMappingURL=styles.css.map */

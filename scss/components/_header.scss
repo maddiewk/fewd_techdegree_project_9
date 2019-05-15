@@ -1,13 +1,11 @@
 .header {
-  // background-image: url('../images/blue_mountains.jpg');
-  // background-image: url('../images/lights.jpg');
-  background-image: url('../images/dawn.jpg');
-
-
+  background-image: url('../images/wall_art.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: contain;
+  // background-color: seashell;
   height: 660px;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .title {
@@ -17,9 +15,8 @@
 }
 
 .nav {
-  @include grid;
   border: 1px solid $border;
-  border-radius: 5px;
+  border-radius: 10px;
   box-shadow: 10px 5px 5px $border;
   width: 85%;
   margin: 0 auto;
@@ -46,7 +43,6 @@
 }
 
 .links a {
-  color: $white;
   @extend %no-underline;
 }
 
