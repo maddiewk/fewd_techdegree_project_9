@@ -1,44 +1,71 @@
 .header {
-  background-image: url('../images/wall_art.jpg');
+  background-image: url('../images/dawn.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: contain;
-  // background-color: seashell;
+  margin-bottom: 0;
+  width: 100%;
   height: 660px;
-  padding-top: 60px;
+  position: relative;
+  @include media-qry(med) {
+    padding-top: 10px;
+  }
+
 }
 
 .title {
-  text-align: right;
-  padding-top: 400px;
-  margin-right: 15px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2em;
+  @include media-qry(med) {
+    text-align: right;
+    padding-top: 400px;
+    margin-right: 15px;
+  }
+
+}
+
+#txt {
+  text-align: left;
 }
 
 .nav {
-  border: 1px solid $border;
   border-radius: 10px;
-  box-shadow: 10px 5px 5px $border;
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
   padding-top: 10px;
+  @include media-qry(med) {
+    border: 1px solid $border;
+    box-shadow: 10px 5px 5px $border;
+  }
 }
 
 .links {
-  @include flexbox;
-  justify-content: space-around;
   width: 100%;
-  padding: 10px;
-  opacity: 0.8;
+  @include media-qry(med) {
+    @include flexbox;
+    justify-content: space-around;
+    padding: 10px;
+    opacity: 0.8;
+  }
 }
 
-.links li{
+.links li {
   display: inline-block;
-  box-shadow: -5px -2px 2px grey;
-  padding: 3px;
+  padding: 5px;
+  margin-bottom: 2px;
+  border: 1px solid $border;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: lighten($border, 4%);
+  opacity: 0.8;
+  transition: transform 0.4s ease-in-out;
   @extend %no-bullets;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.5;
+  @include media-qry(med) {
+    box-shadow: -5px -2px 2px grey;
+    &:hover {
+      opacity: 0.7;
+      transform: skew(3deg, 3deg);
+    }
   }
 }
 

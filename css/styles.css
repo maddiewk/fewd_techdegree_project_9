@@ -353,48 +353,89 @@ body {
   font-family: "Fira Sans", sans-serif;
 }
 
+h1,
+#txt {
+  text-shadow: 3px 3px 5px #A0D3C4;
+}
+
 .header {
-  background-image: url("../images/wall_art.jpg");
+  background-image: url("../images/dawn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: contain;
+  margin-bottom: 0;
+  width: 100%;
   height: 660px;
-  padding-top: 60px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .header {
+    padding-top: 10px;
+  }
 }
 
 .title {
-  text-align: right;
-  padding-top: 400px;
-  margin-right: 15px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 2em;
+}
+@media (min-width: 768px) {
+  .title {
+    text-align: right;
+    padding-top: 400px;
+    margin-right: 15px;
+  }
+}
+
+#txt {
+  text-align: left;
 }
 
 .nav {
-  border: 1px solid #BAAA8F;
   border-radius: 10px;
-  box-shadow: 10px 5px 5px #BAAA8F;
-  width: 85%;
+  width: 95%;
   margin: 0 auto;
   padding-top: 10px;
 }
+@media (min-width: 768px) {
+  .nav {
+    border: 1px solid #BAAA8F;
+    box-shadow: 10px 5px 5px #BAAA8F;
+  }
+}
 
 .links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
   width: 100%;
-  padding: 10px;
-  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    opacity: 0.8;
+  }
 }
 
 .links li {
   display: inline-block;
-  box-shadow: -5px -2px 2px grey;
-  padding: 3px;
+  padding: 5px;
+  margin-bottom: 2px;
+  border: 1px solid #BAAA8F;
+  border-radius: 5px;
+  z-index: 10;
+  background-color: #c2b49c;
+  opacity: 0.8;
+  transition: transform 0.4s ease-in-out;
 }
-.links li:hover {
-  cursor: pointer;
-  opacity: 0.5;
+@media (min-width: 768px) {
+  .links li {
+    box-shadow: -5px -2px 2px grey;
+  }
+  .links li:hover {
+    opacity: 0.7;
+    transform: skew(3deg, 3deg);
+  }
 }
 
 .cite {
@@ -411,6 +452,10 @@ body {
 
 .contact a {
   color: black;
+}
+
+.custom-btn:focus {
+  outline: 0px solid transparent;
 }
 
 /*# sourceMappingURL=styles.css.map */
