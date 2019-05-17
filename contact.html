@@ -12,19 +12,58 @@
     <title>Maddie's Portfolio</title>
   </head>
   <body>
-    <div class="container">
-      <nav class="nav">
-        <ul class="links">
-          <li class="contact"><a href="index.html">Home</a></li>
-          <li class="contact"><a href="resume.html">About</a></li>
-          <li class="contact"><a href="projects.html">Projects</a></li>
-          <li class="contact"><a href="contact.html">Contact</a></li>
-          <li class="contact"><a href="hobbies.html">Hobbies</a></li>
-        </ul>
-      </nav>
 
-    <p>Include two cards side by side (Bootstrap). One is a photo? The other is all my contact information listed inside.</p>
-  </div>
+    <header class="header-contact">
+      <div class="nav nav-contact navbar navbar-expand-md navbar-light" role="navigation">
+        <button class="custom-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#SpartanNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="SpartanNavbar">
+          <ul class="navbar-nav mr-auto links">
+            <li class="nav-item">
+              <a class="nav-link link-contact" href="index.html">Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-contact" href="resume.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-contact" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link link-contact" href="contact.html">Contact
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container container-contact">
+      <div class="card text-center card-contact">
+        <img src="images/lights.jpg" class="card-img-top" alt="City Lights">
+        <div class="card-body card-body-contact">
+          <p class="card-text">I'd love to hear from you! I haven't learned how to build back-end server-side programming like that yet (but I fully intend to learn soon!). You can call, text, email, or snail mail in the meantime.</p>
+        </div>
+      </div>
+      <div class="card text-center card-contact">
+        <div class="card-body card-body-contact">
+          <p class="card-text">Email - mcwatson91@gmail.com</p>
+          <hr class="break">
+          <p class="card-text">Mobile Phone - (301) 807-3123</p>
+          <hr class="break">
+          <p class="card-text">Mailing Address:</p>
+          <p class="card-text">Madeline Claire Keesling</p>
+          <p class="card-text">1855 Thornhill Road Apt 107</p>
+          <p class="card-text">Wesley Chapel, FL 33544</p>
+          <hr class="break">
+          <a href="https://github.com/maddiewk" target="_blank"><img class="social-icon" src="icons/github.svg" alt="GitHub Icon"></a>
+          <a href="https://www.linkedin.com/in/madeline-keesling-52702b94/" target="_blank"><img class="social-icon" src="icons/linkedin.svg" alt="LinkedIn Icon"></a>
+          <a href="https://twitter.com/grayirony" target="_blank"><img class="social-icon" src="icons/twitter.svg" alt="Twitter Icon"></a>
+        </div>
+      </div>
+    </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
