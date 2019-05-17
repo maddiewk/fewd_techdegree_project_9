@@ -4,10 +4,9 @@
   background-size: cover;
   margin-bottom: 0;
   width: 100%;
-  height: 660px;
+  height: 630px;
   position: relative;
   &-contact {
-    padding: 10px 0;
     @include media-qry(med) {
       background-color: $highlight;
     }
