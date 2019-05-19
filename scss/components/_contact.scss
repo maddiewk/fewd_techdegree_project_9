@@ -38,6 +38,12 @@
   width: 30px;
   height: 30px;
   margin: 15px;
+  transition: transform 0.2s ease-in-out;
+  @include media-qry(large) {
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
 }
 
 .break {

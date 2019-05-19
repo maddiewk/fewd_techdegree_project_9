@@ -364,19 +364,12 @@ h1,
   background-size: cover;
   margin-bottom: 0;
   width: 100%;
-  height: 630px;
+  height: 100vh;
   position: relative;
 }
-@media (min-width: 768px) {
-  .header-contact {
-    background-color: #A0D3C4;
-  }
-}
 
-@media (min-width: 768px) {
-  .link-contact {
-    background-color: #FFF;
-  }
+.link-contact a {
+  background-color: #aad8ca;
 }
 
 .title {
@@ -384,24 +377,26 @@ h1,
   bottom: 0;
   margin-left: 2em;
 }
-@media (min-width: 768px) {
-  .title {
-    text-align: right;
-    padding-top: 400px;
-    margin-right: 15px;
-  }
-}
 
 #txt {
   text-align: left;
 }
 
 .nav {
-  border-radius: 10px;
+  border-radius: 5px;
   width: 95%;
   margin: 0 auto;
-  padding-top: 10px;
+  padding: 20px 10px;
 }
+@media (min-width: 768px) {
+  .nav {
+    background-color: #A0D3C4;
+  }
+}
+.nav-contact {
+  background-color: #A0D3C4;
+}
+
 .links {
   width: 100%;
 }
@@ -411,20 +406,18 @@ h1,
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
-    opacity: 0.8;
   }
 }
 
 .links li {
   display: inline-block;
-  padding: 15px;
+  margin-right: 20px;
   margin-bottom: 6px;
   border-radius: 5px;
   z-index: 10;
   background-color: #96cebe;
   opacity: 0.7;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 }
 @media (min-width: 768px) {
   .links li {
@@ -433,19 +426,8 @@ h1,
   }
   .links li:hover {
     opacity: 0.7;
-    transform: skew(3deg, 3deg);
+    transform: scale(1.1);
   }
-}
-
-.links a {
-  color: #FFF;
-}
-
-.cite {
-  color: #FFF;
-}
-.cite a {
-  color: #FFF;
 }
 
 .container {
@@ -493,6 +475,12 @@ h1,
   width: 30px;
   height: 30px;
   margin: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+@media (min-width: 1024px) {
+  .social-icon:hover {
+    transform: scale(1.2);
+  }
 }
 
 @media (min-width: 768px) {

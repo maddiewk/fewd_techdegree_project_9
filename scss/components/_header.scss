@@ -4,31 +4,18 @@
   background-size: cover;
   margin-bottom: 0;
   width: 100%;
-  height: 630px;
+  height: 100vh;
   position: relative;
-  &-contact {
-    @include media-qry(med) {
-      background-color: $highlight;
-    }
-  }
 }
 
-.link-contact {
-  @include media-qry(med) {
-    background-color: $white;
-  }
+.link-contact a {
+  background-color: lighten($highlight, 3%);
 }
 
 .title {
   position: absolute;
   bottom: 0;
   margin-left: 2em;
-  @include media-qry(med) {
-    text-align: right;
-    padding-top: 400px;
-    margin-right: 15px;
-  }
-
 }
 
 #txt {
@@ -36,16 +23,16 @@
 }
 
 .nav {
-  border-radius: 10px;
+  border-radius: 5px;
   width: 95%;
   margin: 0 auto;
-  padding-top: 10px;
-  &-contact {
-      // background-color: $highlight;
-  }
+  padding: 20px 10px;
   @include media-qry(med) {
-    // border: 1px solid $border;
-    // box-shadow: 10px 5px 5px $border;
+    background-color: $highlight;
+  }
+
+  &-contact {
+      background-color: $highlight;
   }
 }
 
@@ -54,39 +41,31 @@
   @include media-qry(med) {
     @include flexbox;
     justify-content: space-around;
-    padding: 10px;
-    opacity: 0.8;
   }
 }
 
 .links li {
   display: inline-block;
-  padding: 15px;
+  // padding: 5px;
+  margin-right: 20px;
   margin-bottom: 6px;
   border-radius: 5px;
   z-index: 10;
   background-color: darken($highlight, 3%);
   opacity: 0.7;
-  transition: transform 0.4s ease-in-out;
+  transition: transform 0.2s ease-in-out;
   @extend %no-bullets;
   @include media-qry(med) {
     border: 1px solid $border;
     box-shadow: 7px 5px 2px darken($border, 3%);
     &:hover {
       opacity: 0.7;
-      transform: skew(3deg, 3deg);
+      transform: scale(1.1);
     }
   }
 }
 
 .links a {
-  color: $white;
+  // color: $text-primary;
   @extend %no-underline;
-}
-
-.cite {
-  color: $white;
-  & a {
-    color: $white;
-  }
 }
