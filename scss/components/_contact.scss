@@ -9,8 +9,8 @@
 
 .card {
   &-body-contact {
-    @include media-qry(large) {
-      margin-top: 50px;
+    & a {
+      @extend %no-underline;
     }
   }
   &-contact {
@@ -21,7 +21,7 @@
       @include flexbox;
       flex-direction: column;
       align-items: center;
-      align-content: space-between;
+      align-content: space-around;
       margin: 40px 30px;
       min-height: 400px;
       border: 1px solid $highlight;
@@ -32,14 +32,27 @@
       margin: 40px auto 0 auto;
     }
   }
+  &-text {
+    margin: 5px 0 40px 0;
+  }
+  &-text-two {
+    margin: 30px 0;
+    color: $border;
+  }
 }
 
 .social-icon {
-  width: 30px;
-  height: 30px;
-  margin: 15px;
-  transition: transform 0.2s ease-in-out;
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px;
+  @include media-qry(med) {
+    margin: 140px 10px 10px 10px;
+  }
   @include media-qry(large) {
+    width: 30px;
+    height: 30px;
+    margin: 120px 15px 15px 15px;
+    transition: transform 0.2s ease-in-out;
     &:hover {
       transform: scale(1.2);
     }
@@ -47,8 +60,9 @@
 }
 
 .break {
+  background-color: $highlight;
   @include media-qry(med) {
     width: 100%;
-    background-color: $highlight;
+    margin: 5px;
   }
 }

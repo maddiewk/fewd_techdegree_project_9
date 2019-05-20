@@ -1,0 +1,27 @@
+.resume-img {
+  height: 200px;
+  @include media-qry(med) {
+    height: 300px;
+  }
+  @include media-qry(large) {
+    height: 500px;
+  }
+}
+
+.resume-width {
+  width: 90%;
+  margin: 0 auto;
+  @include media-qry(med) {
+    width: 60%;
+  }
+  @include media-qry(large) {
+    width: 65%;
+  }
+}
+
+.letters {
+  margin: 200px auto;
+  font-size: 60px;
+  width: 50px;
+  height: 50px;
+}
