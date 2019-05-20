@@ -355,7 +355,7 @@ body {
 
 h1,
 #txt {
-  text-shadow: 3px 3px 5px #A0D3C4;
+  text-shadow: 4px 4px 5px #A0D3C4, -5px -8px 2px #BAAA8F;
 }
 
 .header {
@@ -418,7 +418,6 @@ h1,
   margin-bottom: 6px;
   border-radius: 5px;
   z-index: 10;
-  background-color: #96cebe;
   opacity: 0.7;
   transition: transform 0.2s ease-in-out;
 }
@@ -528,7 +527,7 @@ h1,
 
 .resume-width {
   width: 90%;
-  margin: 0 auto;
+  margin: 50px auto 0 auto;
 }
 @media (min-width: 768px) {
   .resume-width {
@@ -542,10 +541,12 @@ h1,
 }
 
 .letters {
-  margin: 200px auto;
+  margin: 100px auto 150px auto;
   font-size: 60px;
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  color: #4F5F5A;
 }
 
 /*# sourceMappingURL=styles.css.map */

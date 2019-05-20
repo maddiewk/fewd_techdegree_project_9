@@ -13,6 +13,9 @@
 
 .link-contact a {
   background-color: lighten($highlight, 3%);
+  // background-color: $etonblue;
+  // background-color: $laurelgreen;
+
 }
 
 .title {
@@ -32,10 +35,15 @@
   padding: 20px 10px;
   @include media-qry(med) {
     background-color: $highlight;
+    // background-color: $wintergreen;
+    // background-color: $darkgrey;
+
   }
 
   &-contact {
       background-color: $highlight;
+      // background-color: $wintergreen;
+
   }
 }
 
@@ -49,18 +57,23 @@
 
 .links li {
   display: inline-block;
-  // padding: 5px;
   margin-right: 20px;
   margin-bottom: 6px;
   border-radius: 5px;
   z-index: 10;
-  background-color: darken($highlight, 3%);
   opacity: 0.7;
   transition: transform 0.2s ease-in-out;
   @extend %no-bullets;
   @include media-qry(med) {
     border: 1px solid $border;
+    // border: 1px solid $taupe;
+    // border: 1px solid $mint;
+
+
     box-shadow: 7px 5px 2px darken($border, 3%);
+    // box-shadow: 7px 5px 2px $wintergreen;
+    // box-shadow: 7px 5px 2px $maroon, -8px -4px 2px $brass;
+
     &:hover {
       opacity: 0.7;
       transform: scale(1.1);
