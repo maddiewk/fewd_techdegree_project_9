@@ -20,11 +20,16 @@
 }
 
 .letters {
-  margin: 100px auto 150px auto;
+  margin: 100px auto;
   font-size: 60px;
   width: 70px;
   height: 70px;
   text-align: center;
-  color: $nav-link;
-  // border: 2px solid black;
+  color: $laurelgreen;
+}
+
+.profile-pic {
+  width: 50%;
+  height: 50%;
+  margin-bottom: 2em;
 }

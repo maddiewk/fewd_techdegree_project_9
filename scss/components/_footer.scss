@@ -1,1 +1,16 @@
+.footer {
 
+  &-resume {
+    text-align: center;
+    & p {
+      color: $maroon;
+    }
+    & a {
+      @extend %no-underline;
+    }
+    @include media-qry(med) {
+      text-align: left;
+      margin-left: 3em;
+    }
+  }
+}
