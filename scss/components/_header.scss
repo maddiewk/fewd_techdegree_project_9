@@ -14,17 +14,15 @@
 .link-contact a {
   // background-color: lighten($highlight, 3%);
   background-color: $laurelgreen;
-
+  padding: 15px;
+  border-radius: 6px;
+  text-indent: 10px;
 }
 
 .title {
   position: absolute;
   bottom: 0;
   margin-left: 2em;
-  // display: flex;
-  // flex-direction: row;
-  // justify-content: space-around;
-  width: 100%;
 }
 
 #txt {
@@ -73,8 +71,6 @@
     // border: 1px solid $border;
     // border: 1px solid $taupe;
     border: 1px solid $mint;
-
-
     // box-shadow: 7px 5px 2px darken($border, 3%);
     // box-shadow: 7px 5px 2px $wintergreen;
     box-shadow: 7px 5px 2px $maroon, -8px -4px 2px $brass;
@@ -92,8 +88,12 @@
 }
 
 .navbar1 {
-  opacity: 0.2;
+  visibility: hidden;
+
   @include media-qry(med) {
-    opacity: 1;
+    visibility: visible;
+    opacity: 0.6;
+    transition: opacity 2.4s ease-in-out;
+    // opacity: 0.9;
   }
 }

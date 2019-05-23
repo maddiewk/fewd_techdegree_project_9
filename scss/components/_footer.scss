@@ -5,6 +5,8 @@
   background-color: $mint;
   &-resume {
     margin-top: 10px;
+    background-color: $mint;
+    padding: 25px;
     & p {
       color: $maroon;
     }
@@ -15,7 +17,7 @@
       text-align: left;
       display: flex;
       justify-content: space-between;
-      padding: 20px 15px;
+      padding: 20px;
     }
   }
   &-contact {

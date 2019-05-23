@@ -374,13 +374,15 @@ h1,
 
 .link-contact a {
   background-color: #B6CCA1;
+  padding: 15px;
+  border-radius: 6px;
+  text-indent: 10px;
 }
 
 .title {
   position: absolute;
   bottom: 0;
   margin-left: 2em;
-  width: 100%;
 }
 
 #txt {
@@ -436,11 +438,13 @@ h1,
 }
 
 .navbar1 {
-  opacity: 0.2;
+  visibility: hidden;
 }
 @media (min-width: 768px) {
   .navbar1 {
-    opacity: 1;
+    visibility: visible;
+    opacity: 0.6;
+    transition: opacity 2.4s ease-in-out;
   }
 }
 
@@ -472,15 +476,9 @@ h1,
     flex-direction: column;
     align-items: center;
     align-content: space-around;
-    margin: 40px 30px;
-    min-height: 400px;
-    border: 2px dotted #30011E;
-  }
-}
-@media (min-width: 1024px) {
-  .card-contact {
     width: 40%;
-    margin: 40px auto 0 auto;
+    min-height: 400px;
+    border: 2px solid #30011E;
   }
 }
 .card-text {
@@ -498,7 +496,7 @@ h1,
 }
 @media (min-width: 768px) {
   .social-icon {
-    margin: 140px 10px 10px 10px;
+    margin: 110px 10px 10px 10px;
   }
 }
 @media (min-width: 1024px) {
@@ -531,6 +529,8 @@ h1,
 }
 .footer-resume {
   margin-top: 10px;
+  background-color: #D7FCD4;
+  padding: 25px;
 }
 .footer-resume p {
   color: #30011E;
@@ -540,7 +540,7 @@ h1,
     text-align: left;
     display: flex;
     justify-content: space-between;
-    padding: 20px 15px;
+    padding: 20px;
   }
 }
 .footer-contact {
