@@ -2,11 +2,11 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 15px;
-  background-color: $mint;
   &-resume {
+    @include flexbox;
+    justify-content: space-around;
     margin-top: 10px;
-    background-color: $mint;
-    padding: 25px;
+    padding: 10px;
     & p {
       color: $maroon;
     }
@@ -14,19 +14,18 @@
       @extend %no-underline;
     }
     @include media-qry(med) {
-      text-align: left;
-      display: flex;
       justify-content: space-between;
-      padding: 20px;
     }
   }
-  &-contact {
-    padding: 10px;
-    text-align: center;
-    background-color: $mint;
-    margin-top: 30px;
-    @include media-qry(large) {
-      text-align: right;
-    }
+  &-sticky {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   // padding: 10px;
+   width: 100%;
+   text-align: center;
+   @include media-qry(large) {
+     text-align: left;
+   }
   }
 }

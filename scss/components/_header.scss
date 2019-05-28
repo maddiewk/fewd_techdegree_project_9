@@ -9,15 +9,20 @@
   &-contact {
     margin-bottom: 40px;
   }
+  &-resume {
+    @include media-qry(med) {
+      visibility: hidden;
+    }
+  }
 }
 
-.link-contact a {
-  // background-color: lighten($highlight, 3%);
-  background-color: $laurelgreen;
-  padding: 15px;
-  border-radius: 6px;
-  text-indent: 10px;
-}
+
+// .link-contact a {
+//   background-color: $laurelgreen;
+//   padding: 15px;
+//   border-radius: 6px;
+//   text-indent: 10px;
+// }
 
 .title {
   position: absolute;
@@ -35,16 +40,12 @@
   margin: 0 auto;
   padding: 20px 10px;
   @include media-qry(med) {
-    // background-color: $highlight;
-    // background-color: $wintergreen;
     background-color: $darkgrey;
     opacity: 0.9;
 
   }
 
   &-contact {
-      // background-color: $highlight;
-      // background-color: $wintergreen;
       background-color: $darkgrey;
 
   }
@@ -67,24 +68,15 @@
   opacity: 0.7;
   transition: transform 0.2s ease-in-out;
   @extend %no-bullets;
-  @include media-qry(med) {
-    // border: 1px solid $border;
-    // border: 1px solid $taupe;
-    border: 1px solid $mint;
-    // box-shadow: 7px 5px 2px darken($border, 3%);
-    // box-shadow: 7px 5px 2px $wintergreen;
-    box-shadow: 7px 5px 2px $maroon, -8px -4px 2px $brass;
-
-    &:hover {
-      opacity: 0.7;
-      transform: scale(1.1);
-    }
-  }
 }
 
 .links a {
-  // color: $text-primary;
   @extend %no-underline;
+  @include media-qry(med) {
+    &:hover {
+      color: $maroon;
+    }
+  }
 }
 
 .navbar1 {
