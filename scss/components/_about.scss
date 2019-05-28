@@ -81,6 +81,7 @@
   // grid-row: 4 / 5;
   &-test {
     visibility: hidden;
+    display: none;
     @include media-qry(med) {
       visibility: visible;
       display: grid;
@@ -111,8 +112,9 @@
 }
 
 .scroll {
-  
+
   &-mbl {
+    margin-top: 8em;
     @include media-qry(med) {
       display: none;
     }

@@ -441,6 +441,11 @@ body {
   text-align: center;
 }
 
+.project-link {
+  background-color: grey;
+  margin-left: 4em;
+}
+
 .container {
   width: 100%;
 }
@@ -475,6 +480,11 @@ body {
 }
 .card-text-two {
   margin: 30px 0;
+}
+.card-projects {
+  height: 480px;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .social-icon {
@@ -644,6 +654,7 @@ body {
 }
 .parent-test {
   visibility: hidden;
+  display: none;
 }
 @media (min-width: 768px) {
   .parent-test {
@@ -674,6 +685,9 @@ body {
   color: gray;
 }
 
+.scroll-mbl {
+  margin-top: 8em;
+}
 @media (min-width: 768px) {
   .scroll-mbl {
     display: none;
