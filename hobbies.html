@@ -9,35 +9,36 @@
     <title>Maddie's Portfolio</title>
   </head>
   <body>
-<header class="header-resume" id="nav">
-  <div class="nav nav-contact navbar navbar-expand-md navbar-dark fixed-top" role="navigation">
-    <button class="custom-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#SpartanNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="SpartanNavbar">
-      <ul class="navbar-nav mr-auto links">
-        <li class="nav-item link-contact">
-          <a class="nav-link text-white" href="index.html">Home
-          </a>
-        </li>
-        <li class="nav-item active link-contact">
-          <a class="nav-link text-white" href="resume.html">About
-            <span class="sr-only">(current)</span>
-          </a>
-        </li>
-        <li class="nav-item link-contact">
-          <a class="nav-link text-white" href="projects.html">Portfolio</a>
-        </li>
-        <li class="nav-item link-contact">
-          <a class="nav-link text-white" href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</header>
 
 <div class="parent-test">
-  <ul class="navbar-nav mr-auto links testing">
+  <div class="mobile-header-resume" id="nav">
+    <div class="nav nav-contact navbar navbar-expand-md navbar-light fixed-top" role="navigation">
+      <button class="custom-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#SpartanNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse coll-custom" id="SpartanNavbar">
+        <ul class="navbar-nav mr-auto links">
+          <li class="nav-item link-contact">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item active link-contact">
+            <a class="nav-link" href="resume.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item link-contact">
+            <a class="nav-link" href="projects.html">Portfolio</a>
+          </li>
+          <li class="nav-item link-contact">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <ul class="navbar-nav mr-auto links desktop-home">
     <li class="nav-item link-contact">
       <a class="nav-link home" href="index.html">Madeline Keesling
         <span class="sr-only">(current)</span>
@@ -53,12 +54,13 @@
       <a class="nav-link" href="contact.html">Contact</a>
     </li>
     <li class="nav-item link-contact">
-      <a class="nav-link" href="hobbies.html">Test</a>
+      <a class="nav-link" href="projects.html">Old Projects Page</a>
     </li>
   </ul>
 
   <div class="container scroll-dsktop" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
     <p>This is the new projects page. Rename the file to projects and delete other projects file later!!!</p>
+    <p>Use JavaScript to hide the buttons until hovered over, then do a cool transition effect.</p>
     <div class="card card-projects">
     <img src="images/project3.png" class="card-img-top" alt="Project Three">
     <div class="card-body">
@@ -71,9 +73,8 @@
   </div>
 </div>
 
-<div class="container scroll-mbl">
+<!-- <div class="container scroll-mbl">
   <p>This is the new projects page. Rename the file to projects and delete other projects file later!!!</p>
-  <div class="card card-projects">
   <img src="images/project3.png" class="card-img-top" alt="Project Three">
   <div class="card-body">
     <h5 class="card-title">Registration Form</h5>
@@ -81,7 +82,7 @@
     <a href="https://maddiewk.github.io/fewd_techdegree_project3/" target="_blank" class="btn project-link">View Project</a>
     <a href="https://github.com/maddiewk/fewd_techdegree_project3" target="_blank" class="btn project-link">Source Code</a>
   </div>
-</div>
+</div> -->
 </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

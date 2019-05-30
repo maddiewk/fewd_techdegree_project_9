@@ -1,0 +1,32 @@
+.social-icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px;
+  @include media-qry(med) {
+    margin: 110px 10px 10px 10px;
+  }
+  @include media-qry(large) {
+    width: 30px;
+    height: 30px;
+    margin: 120px 15px 15px 15px;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+.profile-pic {
+  float: right;
+  @include media-qry(med) {
+    width: 200px;
+    height: 205px;
+    float: none;
+    margin-left: 25%;
+  }
+  @include media-qry(large) {
+    width: 350px;
+    height: 475px;
+    margin-left: 30%;
+  }
+}

@@ -1,76 +1,102 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans|Yeon+Sung" rel="stylesheet">
     <title>Maddie's Portfolio</title>
   </head>
   <body class="aboutPage">
-
-    <header class="header-resume" id="nav">
-      <div class="nav nav-contact navbar navbar-expand-md navbar-dark fixed-top" role="navigation">
-        <button class="custom-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#SpartanNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="SpartanNavbar">
-          <ul class="navbar-nav mr-auto links">
-            <li class="nav-item link-contact">
-              <a class="nav-link text-white" href="index.html">Home
-              </a>
-            </li>
-            <li class="nav-item active link-contact">
-              <a class="nav-link text-white" href="resume.html">About
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item link-contact">
-              <a class="nav-link text-white" href="projects.html">Portfolio</a>
-            </li>
-            <li class="nav-item link-contact">
-              <a class="nav-link text-white" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+<div class="parent-about">
+  <div class="mobile-header-resume" id="nav">
+    <div class="nav nav-contact navbar navbar-expand-md navbar-light fixed-top" role="navigation">
+      <button class="custom-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#SpartanNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse coll-custom" id="SpartanNavbar">
+        <ul class="navbar-nav mr-auto links">
+          <li class="nav-item link-contact">
+            <a class="nav-link" href="index.html">Home
+            </a>
+          </li>
+          <li class="nav-item active link-contact">
+            <a class="nav-link" href="resume.html">About
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item link-contact">
+            <a class="nav-link" href="hobbies.html">Portfolio</a>
+          </li>
+          <li class="nav-item link-contact">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
       </div>
-    </header>
-
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade resume-width" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/nz_mountain.jpg" class="d-block w-100 resume-img" alt="New Zealand mountains">
-        </div>
-        <div class="carousel-item">
-          <img src="images/rock_scramble.jpg" class="d-block w-100 resume-img" alt="View from mountain">
-        </div>
-        <div class="carousel-item">
-          <img src="images/wall_art.jpg" class="d-block w-100 resume-img" alt="Wall art">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
-    <div class="scroll-down">
+  </div>
+
+  <ul class="navbar-nav mr-auto links desktop-about">
+    <li class="nav-item link-contact active">
+      <a class="nav-link home" href="index.html">Madeline Keesling
+        <span class="sr-only">(current)</span>
+      </a>
+    </li>
+    <li class="nav-item link-contact">
+      <a class="nav-link" href="resume.html">About</a>
+    </li>
+    <li class="nav-item link-contact">
+      <a class="nav-link" href="hobbies.html">Portfolio</a>
+    </li>
+    <li class="nav-item link-contact">
+      <a class="nav-link" href="contact.html">Contact</a>
+    </li>
+    <li class="nav-item link-contact">
+      <a class="nav-link" href="projects.html">Old Projects Page</a>
+    </li>
+  </ul>
+
+
+
+
+  <div class="container scroll-about" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+    <img class="profile-pic rounded img-thumbnail img-fluid profile-pic" src="images/me.jpg" alt="Photo of Madeline">
+    <h5>ABOUT</h5>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit accumsan lacus, vel scelerisque justo accumsan non. Duis est quam, lacinia in elit in, auctor rutrum quam. Donec mollis dui massa, ut egestas dolor blandit a. Etiam enim eros, sagittis et interdum vel, suscipit at ante. Pellentesque vitae ligula at est rutrum lacinia. Integer a odio placerat ex rutrum porta non id odio. Praesent urna sem, ullamcorper facilisis purus nec, dapibus fringilla orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque velit ex, pharetra ac ultrices et, dapibus tincidunt magna. Donec vel sem in quam fringilla tincidunt nec at tellus. Proin vulputate, augue at eleifend pretium, neque nisi cursus erat, luctus ornare dolor dolor nec ligula. Integer id enim quis ante placerat vestibulum.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ornare quis sem sed cursus. Phasellus id aliquet erat, quis vulputate nunc. In eu massa magna. Fusce non est sit amet tortor accumsan rutrum. Nullam in ultricies metus, et venenatis felis. Proin consectetur volutpat est. Mauris erat est, vestibulum a luctus ut, accumsan et velit. Etiam eget ligula ultrices, rutrum massa eget, dictum nisi.
+
+Curabitur nec ipsum ornare justo lacinia euismod. Integer pharetra aliquam felis, ac tincidunt nibh iaculis vel. In mattis justo ac mi vulputate, nec ultrices quam finibus. Integer ex felis, interdum vel sagittis ut, pulvinar et risus. Quisque lorem urna, dapibus eget lacinia ac, tempus eu tellus. Aliquam erat volutpat. Cras nec varius quam, vitae dignissim risus. Vivamus eu ante scelerisque, pulvinar ante non, gravida dui. Nulla facilisi. Cras sodales volutpat ultrices. Quisque scelerisque turpis in dapibus venenatis. Curabitur dapibus risus eu dui imperdiet mattis. Maecenas ullamcorper enim nec mauris cursus viverra.
+
+Donec aliquam purus ac nunc vehicula placerat. Fusce in neque convallis, porta lacus eu, eleifend arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla mauris, mollis et hendrerit at, porttitor feugiat lorem. Mauris vitae urna luctus magna malesuada venenatis. Phasellus purus purus, luctus in ullamcorper nec, venenatis id eros. Nulla a aliquet tellus, elementum tincidunt elit. Vestibulum sed tortor vehicula sapien vehicula congue quis sit amet velit. Curabitur vestibulum orci ac risus scelerisque convallis ut non dolor. Nulla eu mi sodales, efficitur nisl sit amet, pulvinar orci.
+
+In dapibus id erat a dictum. Fusce eget lacus vel neque sagittis gravida sit amet non purus. Mauris non dui at dui elementum condimentum. Cras nec velit tempus, molestie erat sed, dapibus enim. Sed quis dolor velit. Suspendisse luctus nisl ut lacus consequat, eu maximus diam pulvinar. Sed dignissim massa et augue semper eleifend. Morbi accumsan elit vitae egestas pulvinar. Vivamus eu tristique tortor.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit accumsan lacus, vel scelerisque justo accumsan non. Duis est quam, lacinia in elit in, auctor rutrum quam. Donec mollis dui massa, ut egestas dolor blandit a. Etiam enim eros, sagittis et interdum vel, suscipit at ante. Pellentesque vitae ligula at est rutrum lacinia. Integer a odio placerat ex rutrum porta non id odio. Praesent urna sem, ullamcorper facilisis purus nec, dapibus fringilla orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque velit ex, pharetra ac ultrices et, dapibus tincidunt magna. Donec vel sem in quam fringilla tincidunt nec at tellus. Proin vulputate, augue at eleifend pretium, neque nisi cursus erat, luctus ornare dolor dolor nec ligula. Integer id enim quis ante placerat vestibulum.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer ornare quis sem sed cursus. Phasellus id aliquet erat, quis vulputate nunc. In eu massa magna. Fusce non est sit amet tortor accumsan rutrum. Nullam in ultricies metus, et venenatis felis. Proin consectetur volutpat est. Mauris erat est, vestibulum a luctus ut, accumsan et velit. Etiam eget ligula ultrices, rutrum massa eget, dictum nisi.
+
+Curabitur nec ipsum ornare justo lacinia euismod. Integer pharetra aliquam felis, ac tincidunt nibh iaculis vel. In mattis justo ac mi vulputate, nec ultrices quam finibus. Integer ex felis, interdum vel sagittis ut, pulvinar et risus. Quisque lorem urna, dapibus eget lacinia ac, tempus eu tellus. Aliquam erat volutpat. Cras nec varius quam, vitae dignissim risus. Vivamus eu ante scelerisque, pulvinar ante non, gravida dui. Nulla facilisi. Cras sodales volutpat ultrices. Quisque scelerisque turpis in dapibus venenatis. Curabitur dapibus risus eu dui imperdiet mattis. Maecenas ullamcorper enim nec mauris cursus viverra.
+
+Donec aliquam purus ac nunc vehicula placerat. Fusce in neque convallis, porta lacus eu, eleifend arcu. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla mauris, mollis et hendrerit at, porttitor feugiat lorem. Mauris vitae urna luctus magna malesuada venenatis. Phasellus purus purus, luctus in ullamcorper nec, venenatis id eros. Nulla a aliquet tellus, elementum tincidunt elit. Vestibulum sed tortor vehicula sapien vehicula congue quis sit amet velit. Curabitur vestibulum orci ac risus scelerisque convallis ut non dolor. Nulla eu mi sodales, efficitur nisl sit amet, pulvinar orci.
+
+In dapibus id erat a dictum. Fusce eget lacus vel neque sagi</p>
+  </div>
+
+
+
+</div>
+
+<footer class="footer-resume">
+  <a href="#"><p>Back to top</p></a>
+  <p>&#xa9;Copyright Madeline Keesling</p>
+</footer>
+
+    <!-- <div class="scroll-down">
       <p class="letters">&VerticalSeparator;</p>
       <p class="letters">&Or;</p>
-    </div>
-    <div class="text-center">
+    </div> -->
+    <!-- <div class="text-center">
       <h4>MADELINE KEESLING</h4>
       <img src="images/me.jpg" class="rounded img-thumbnail img-fluid profile-pic" alt="Me">
     </div>
@@ -128,7 +154,7 @@
     <footer class="footer-resume">
       <a href="#"><p>Back to top</p></a>
       <p>&#xa9;Copyright Madeline Keesling</p>
-    </footer>
+    </footer> -->
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
