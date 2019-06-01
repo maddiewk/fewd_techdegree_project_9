@@ -1,0 +1,96 @@
+.centered {
+  text-align: center;
+}
+
+.parent {
+
+  &-home {
+    background-image: url('../images/cactus.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include media-qry(med) {
+      @include grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      height: 100vh;
+      background-position: bottom;
+    }
+  }
+  &-about {
+    // background: #E8E8E8;
+    // background: -moz-linear-gradient(top, #E8E8E8 0%, #489C4C 100%, #C59237 100%);
+    // background: -webkit-linear-gradient(top, #E8E8E8 0%, #489C4C 100%, #C59237 100%);
+    // background: linear-gradient(to bottom, #E8E8E8 0%, #489C4C 100%, #C59237 100%);
+    @include media-qry(med) {
+      @include grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      height: 100vh;
+    }
+  }
+  &-contact {
+    // background-image: url('../images/blue_mountains.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-position: center;
+
+    @include media-qry(med) {
+      @include grid;
+      grid-template-columns: 200px 1fr;
+      grid-template-rows: auto;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      height: 100vh;
+    }
+  }
+}
+
+.desktop {
+  &-home {
+    display: none;
+    @include media-qry(med) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1 / 2;
+      grid-row: 1 / 5;
+      padding: 15px;
+      border-radius: 20%;
+      border-right: 2px solid $maroon;
+      // border-right: 6px dashed darkgrey;
+    }
+  }
+  &-contact {
+    display: none;
+    @include media-qry(med) {
+      display: flex;
+      flex-direction: column;
+      grid-column: 1 / 2;
+      grid-row: 1 / 5;
+      padding: 15px;
+      border-radius: 50%;
+      border-right: 2px solid $maroon;
+      // border-right: 6px dashed darkgrey;
+    }
+  }
+  &-about {
+    display: none;
+    @include media-qry(med) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      grid-column: 1 / 2;
+      grid-row: 1 / 5;
+      padding: 15px;
+      border-radius: 50%;
+      border-right: 2px solid $maroon;
+      // border-right: 6px dashed darkgrey;
+    }
+  }
+}

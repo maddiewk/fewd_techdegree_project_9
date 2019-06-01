@@ -10,50 +10,53 @@
   </head>
   <body>
   <div class="parent-home">
+    <!-- Mobile menu -->
     <div class="mobile-header">
       <div class="nav navbar navbar-expand-md navbar-light" role="navigation">
-        <button class="custom-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#SpartanNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse coll-custom" id="SpartanNavbar">
-          <ul class="navbar-nav mr-auto links">
-            <li class="nav-item link-contact">
-              <a class="nav-link" href="index.html">Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item link-contact">
-              <a class="nav-link" href="resume.html">About</a>
-            </li>
-            <li class="nav-item link-contact">
-              <a class="nav-link" href="projects.html">Portfolio</a>
-            </li>
-            <li class="nav-item link-contact">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
+        <span onclick="openNav()" class="navbar-toggler-icon"></span>
+        <div id="myNav" class="overlay">
+          <!-- Button to close the overlay navigation -->
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <div class="overlay-content coll-custom" id="SpartanNavbar">
+            <ul class="navbar-nav mr-auto links">
+              <li class="nav-item link-contact">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item link-contact">
+                <a class="nav-link" href="resume.html">My Journey</a>
+              </li>
+              <li class="nav-item link-contact">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item link-contact">
+                <a class="nav-link" href="contact.html">Contact Me</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="title">
-          <h1>Madeline Keesling</h1>
-          <p>Musician and Web Designer</p>
+      <div id="fade2" class="title">
+          <h4>Madeline Keesling</h4>
+          <p>Musician and Web Developer</p>
       </div>
-    </div>
+  </div>
 
     <ul class="navbar-nav mr-auto links desktop-home">
-      <li class="nav-item link-contact active">
+      <li class="nav-item link-contact">
         <a class="nav-link home" href="index.html">Madeline Keesling
           <span class="sr-only">(current)</span>
         </a>
       </li>
       <li class="nav-item link-contact">
-        <a class="nav-link" href="resume.html">About</a>
+        <a class="nav-link" href="resume.html">My Journey</a>
       </li>
       <li class="nav-item link-contact">
-        <a class="nav-link" href="projects.html">Portfolio</a>
+        <a class="nav-link" href="projects.html">Projects</a>
       </li>
       <li class="nav-item link-contact">
-        <a class="nav-link" href="contact.html">Contact</a>
+        <a class="nav-link" href="contact.html">Contact Me</a>
       </li>
     </ul>
   </div>

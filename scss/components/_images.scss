@@ -17,7 +17,7 @@
 }
 
 .profile-pic {
-  float: right;
+  // float: right;
   @include media-qry(med) {
     width: 200px;
     height: 205px;

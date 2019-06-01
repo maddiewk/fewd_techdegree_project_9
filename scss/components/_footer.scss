@@ -1,7 +1,5 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 15px;
+
   &-resume {
     @include flexbox;
     justify-content: space-between;
@@ -14,7 +12,7 @@
       @extend %no-underline;
     }
     @include media-qry(med) {
-      display: none;
+      font-size: 0.8em;
     }
   }
   &-sticky {
@@ -27,5 +25,11 @@
    @include media-qry(large) {
      text-align: left;
    }
+  }
+}
+
+.hide {
+  @include media-qry(med) {
+    visibility: hidden;
   }
 }

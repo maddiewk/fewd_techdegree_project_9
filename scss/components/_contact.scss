@@ -11,23 +11,25 @@
 
 .card {
   &-body-contact {
+
     & a {
       @extend %no-underline;
     }
   }
   &-contact {
+    // border: none;
     width: 100%;
     margin: 10px auto;
     @include media-qry(med) {
       max-width: 100%;
-      @include flexbox;
-      flex-direction: column;
-      align-items: center;
-      align-content: space-around;
+      // @include flexbox;
+      // flex-direction: column;
+      // align-items: center;
+      // align-content: space-around;
       width: 40%;
-      min-height: 400px;
+      // min-height: 400px;
       // border: 1px solid $highlight;
-      border: 2px solid $maroon;
+      // border: 2px solid $maroon;
     }
   }
   &-text {
@@ -49,4 +51,8 @@
     width: 100%;
     margin: 5px;
   }
+}
+
+#fade {
+  display: none;
 }
