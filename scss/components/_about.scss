@@ -1,35 +1,5 @@
-// .resume-img {
-//   height: 200px;
-//   @include media-qry(med) {
-//     height: 300px;
-//   }
-//   @include media-qry(large) {
-//     height: 500px;
-//   }
-// }
-//
-// .resume-width {
-//   width: 90%;
-//   margin: 50px auto 0 auto;
-//   @include media-qry(med) {
-//     width: 60%;
-//   }
-//   @include media-qry(large) {
-//     width: 65%;
-//   }
-// }
-//
-// .letters {
-//   margin: 100px auto;
-//   font-size: 60px;
-//   width: 70px;
-//   height: 70px;
-//   text-align: center;
-// }
-
-
 .bio {
-  margin-bottom: 50px;
+  margin: 50px 0;
 }
 
 .skills {
@@ -65,14 +35,8 @@
 
 .scroll {
 
-  // &-mbl {
-  //   margin-top: 8em;
-  //   @include media-qry(med) {
-  //     display: none;
-  //   }
-  // }
   &-dsktop {
-    margin-top: 7em;
+    // margin-top: 0;
     @include media-qry(med) {
       margin-top: 0;
       display: block;
@@ -82,7 +46,7 @@
   }
   &-about {
     margin-top: 7em;
-    
+
     @include media-qry(med) {
       margin-top: 0;
       display: block;

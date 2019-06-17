@@ -1,7 +1,10 @@
 .links {
   width: 100%;
   @include media-qry(med) {
-    width: 100%;
+    @include flexbox;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
   }
   & li {
     position: relative;
@@ -22,26 +25,23 @@
       }
     }
   }
-  @include media-qry(med) {
-    @include flexbox;
-    justify-content: space-around;
-  }
 }
 
 .link-contact {
   margin-left: auto;
   margin-right: auto;
   width: 90%;
+  background-color: white;
+  @include media-qry(med) {
+    background-color: inherit;
+  }
   & a {
     padding: 5px;
-    // border: 1px solid gray;
     border-radius: 10px;
-    background-color: grey;
     @include media-qry(med) {
-      border: none;
-      background-color: inherit;
+      color: $darkgrey;
     }
-  }
+    }
 }
 
 .home {

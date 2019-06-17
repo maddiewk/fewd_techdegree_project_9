@@ -9,31 +9,32 @@
     <title>Maddie's Portfolio</title>
   </head>
   <body>
-
-<div class="parent-about">
-  <div class="mobile-header-resume" id="nav">
-    <div class="nav nav-contact navbar navbar-expand-md navbar-light fixed-top" role="navigation">
-      <button class="custom-btn navbar-toggler" type="button" data-toggle="collapse" data-target="#SpartanNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse coll-custom" id="SpartanNavbar">
-        <ul class="navbar-nav mr-auto links">
-          <li class="nav-item link-contact">
-            <a class="nav-link" href="index.html">Home
-            </a>
-          </li>
-          <li class="nav-item active link-contact">
-            <a class="nav-link" href="resume.html">About
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item link-contact">
-            <a class="nav-link" href="projects.html">Portfolio</a>
-          </li>
-          <li class="nav-item link-contact">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <div class="parent-about">
+      <!-- Mobile menu -->
+      <div class="mobile-header-resume">
+        <div class="nav navbar navbar-expand-md navbar-light" role="navigation">
+        <span onclick="openNav()" class="navbar-toggler-icon"></span>
+        <div id="myNav" class="overlay">
+        <!-- close overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content coll-custom" id="SpartanNavbar">
+          <ul class="navbar-nav mr-auto links">
+            <li class="nav-item link-contact">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item link-contact">
+              <a class="nav-link" href="resume.html">About Me</a>
+            </li>
+            <li class="nav-item link-contact">
+              <a class="nav-link" href="projects.html">Projects</a>
+            </li>
+            <li class="nav-item link-contact">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -45,10 +46,10 @@
       </a>
     </li>
     <li class="nav-item link-contact">
-      <a class="nav-link" href="resume.html">About</a>
+      <a class="nav-link" href="resume.html">About Me</a>
     </li>
     <li class="nav-item link-contact">
-      <a class="nav-link" href="projects.html">Portfolio</a>
+      <a class="nav-link" href="projects.html">Projects</a>
     </li>
     <li class="nav-item link-contact">
       <a class="nav-link" href="contact.html">Contact</a>
@@ -56,7 +57,6 @@
   </ul>
 
   <div class="container scroll-dsktop" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-    <p>This is the new projects page. Rename the file to projects and delete other projects file later!!!</p>
     <p>Use JavaScript to hide the buttons until hovered over, then do a cool transition effect.</p>
     <div class="card card-projects">
     <img src="images/project3.png" class="card-img-top" alt="Project Three">
