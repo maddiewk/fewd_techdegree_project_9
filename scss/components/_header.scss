@@ -1,7 +1,6 @@
 .mobile-header {
   width: 100%;
   height: 100vh;
-  // position: relative;
   @include media-qry(med) {
     display: none;
   }
@@ -12,6 +11,7 @@
     }
   }
   &-resume {
+    margin-bottom: 30px;
     @include media-qry(med) {
       display: none;
     }
@@ -19,43 +19,15 @@
 }
 
 .title {
-  // position: absolute;
   text-align: center;
   display: none;
-  // margin: 50px 0 0 50px;
+  color: $darkolive;
 }
 
-.navbar {
-  margin-bottom: 0;
+.burger {
+  font-size: 30px;
+  box-shadow: 0 3px 3px 0 $olive;
 }
-
-.nav {
-  border-radius: 5px;
-  width: 95%;
-  margin: 0 auto;
-  padding: 20px 10px;
-  @include media-qry(med) {
-    background-color: $darkgrey;
-    opacity: 0.9;
-  }
-}
-
-.coll-custom {
-  position: absolute;
-  left: 0;
-  top: 100%;
-}
-
-.navbar1 {
-  visibility: hidden;
-
-  @include media-qry(med) {
-    visibility: visible;
-    opacity: 0.6;
-    transition: opacity 2.4s ease-in-out;
-  }
-}
-
 
 
 // testing out new mobile menu options
@@ -66,9 +38,9 @@
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: $maroon;
+  background-color: $darkolive;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .overlay-content {
@@ -76,11 +48,11 @@
   top: 20%;
   width: 100%;
   text-align: center;
-  margin-top: 30px
+  margin-top: 30px;
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 48px;
   text-decoration: none;
   font-size: 30px;
   display: block;

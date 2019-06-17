@@ -13,7 +13,7 @@
       <!-- Mobile menu -->
       <div class="mobile-header-resume">
         <div class="nav navbar navbar-expand-md navbar-light" role="navigation">
-        <span onclick="openNav()" class="navbar-toggler-icon"></span>
+        <span onclick="openNav()" class="navbar-toggler-icon burger"></span>
         <div id="myNav" class="overlay">
         <!-- close overlay navigation -->
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -56,42 +56,87 @@
     </li>
   </ul>
 
-  <div class="container scroll-dsktop" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
-    <p>Use JavaScript to hide the buttons until hovered over, then do a cool transition effect.</p>
+  <div class="container scroll-dsktop block-color" data-spy="scroll" data-target="#navbar-example3" data-offset="0">
+    <!-- <p>Use JavaScript to hide the buttons until hovered over, then do a cool transition effect.</p>
+    <p>Here are some projects I've completed throughout this program.</p> -->
     <div class="card card-projects">
-    <img src="images/project3.png" class="card-img-top" alt="Project Three">
-    <div class="card-body">
-      <h5 class="card-title">Registration Form</h5>
-      <p class="card-text"></p>
-      <a href="https://maddiewk.github.io/fewd_techdegree_project3/" target="_blank" class="btn project-link">View Project</a>
-      <a href="https://github.com/maddiewk/fewd_techdegree_project3" target="_blank" class="btn project-link">Source Code</a>
+      <div class="project-img">
+        <img src="images/project3.png" class="card-img-top" alt="Project Three">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">A Sample Registration Form</h5>
+        <p class="card-text">I took a mockup and built my own version of a simple registration form.</p>
+        <a href="https://maddiewk.github.io/fewd_techdegree_project3/" target="_blank" class="btn project-link">View Project</a>
+        <a href="https://github.com/maddiewk/fewd_techdegree_project3" target="_blank" class="btn project-link">Source Code</a>
+      </div>
     </div>
-  </div>
-  </div>
-  <!-- <div class="container">
-    <h5>PORTFOLIO</h5>
-    <p>Images that link to something: use Bootstrap Cards to show image, open demo, then see code. Yay.</p>
-    <p>Here's an example of how it will work when I link my projects on their own:</p>
-    <a href="https://maddiewk.github.io/fewd_techdegree_project5/" target="_blank"><p>Interactive Photo Gallery</p></a>
-    <a href="https://maddiewk.github.io/fewd_techdegree_project4/" target="_blank"><p>Sass Mockup</p></a>
-    <a href="https://maddiewk.github.io/fewd_techdegree_project3/" target="_blank"><p>Build a Simple Registration Form</p></a>
-    <a href="https://maddiewk.github.io/fewd_techdegree_project6/" target="_blank"><p>Wheel of Success Game</p></a>
-    <a href="https://maddiewk.github.io/fewd_techdegree_project7/" target="_blank"><p>User Dashboard with Chart.js</p></a>
-    <a href="https://maddiewk.github.io/fewd_techdegree_project8/" target="_blank"><p>Random Employee Directory</p></a>
 
-  </div> -->
+    <div class="card card-projects">
+      <div class="project-img">
+        <img src="images/project4.png" class="card-img-top" alt="Project Four">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Tic-TacToe</h5>
+        <p class="card-text">Play Tic-Tac-Toe against the computer; built with JavaScript.</p>
+        <a href="https://maddiewk.github.io/techdegree_project_4/" target="_blank" class="btn project-link">View Project</a>
+        <a href="https://github.com/maddiewk/techdegree_project_4" target="_blank" class="btn project-link">Source Code</a>
+      </div>
+    </div>
+
+    <div class="card card-projects">
+      <div class="project-img">
+        <img src="images/project5.png" class="card-img-top" alt="Project Five">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Interactive Photo Gallery</h5>
+        <p class="card-text">Photo gallery built with JavaScript and Lightbox.</p>
+        <a href="https://maddiewk.github.io/fewd_techdegree_project5/" target="_blank" class="btn project-link">View Project</a>
+        <a href="https://github.com/maddiewk/fewd_techdegree_project5" target="_blank" class="btn project-link">Source Code</a>
+      </div>
+    </div>
+
+    <div class="card card-projects">
+      <div class="project-img">
+        <img src="images/project6.png" class="card-img-top" alt="Project Six">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Wheel of Success Game</h5>
+        <p class="card-text">A fun word guessing game built using vanilla JavaScript.</p>
+        <a href="https://maddiewk.github.io/fewd_techdegree_project6/" target="_blank" class="btn project-link">View Project</a>
+        <a href="https://github.com/maddiewk/fewd_techdegree_project6" target="_blank" class="btn project-link">Source Code</a>
+      </div>
+    </div>
+
+    <div class="card card-projects">
+      <div class="project-img">
+        <img src="images/project7.png" class="card-img-top" alt="Project Seven">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Web App Dashboard</h5>
+        <p class="card-text">A sample user dashboard featuring simple JavaScript interaction, local storage, and charts built with Chart.js.</p>
+        <a href="https://maddiewk.github.io/fewd_techdegree_project7/" target="_blank" class="btn project-link">View Project</a>
+        <a href="https://github.com/maddiewk/fewd_techdegree_project7" target="_blank" class="btn project-link">Source Code</a>
+      </div>
+    </div>
+
+    <div class="card card-projects">
+      <div class="project-img">
+        <img src="images/project8.png" class="card-img-top" alt="Project Eight">
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Random Employee Directory</h5>
+        <p class="card-text">Directory built using the Fetch API to display a group of sample employees.</p>
+        <a href="https://maddiewk.github.io/fewd_techdegree_project8/" target="_blank" class="btn project-link">View Project</a>
+        <a href="https://github.com/maddiewk/fewd_techdegree_project8" target="_blank" class="btn project-link">Source Code</a>
+      </div>
+    </div>
+    <p class="copyright">&#xa9;Copyright Madeline Keesling</p>
+  </div>
 </div>
+<footer class="footer-resume hide">
+  <a href="#"><p>Top</p></a>
+</footer>
 
-<!-- <div class="container scroll-mbl">
-  <p>This is the new projects page. Rename the file to projects and delete other projects file later!!!</p>
-  <img src="images/project3.png" class="card-img-top" alt="Project Three">
-  <div class="card-body">
-    <h5 class="card-title">Registration Form</h5>
-    <p class="card-text"></p>
-    <a href="https://maddiewk.github.io/fewd_techdegree_project3/" target="_blank" class="btn project-link">View Project</a>
-    <a href="https://github.com/maddiewk/fewd_techdegree_project3" target="_blank" class="btn project-link">Source Code</a>
-  </div>
-</div> -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

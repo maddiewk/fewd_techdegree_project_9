@@ -1,16 +1,3 @@
-// in mobile layout, fade sticky navbar while scrolling down
-
-// window.onscroll = function() {
-//   if ($('body').is('.aboutPage')) {
-//     const nav = document.getElementById('nav');
-//     if ( window.pageYOffset > 100 ) {
-//         nav.classList.add("navbar1");
-//     } else {
-//         nav.classList.remove("navbar1");
-//     }
-//   }
-// }
-
 $(document).ready(function() {
   $('#fade').fadeIn(1800);
   $('#fade2').fadeIn(6000);
@@ -24,3 +11,9 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+// load separate content without reloading the entire page
+// const contentWrapper = document.querySelector('.testport');
+// $('.testabout').on('click', function() {
+//   contentWrapper.innerHTML = about;
+// });

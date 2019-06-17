@@ -30,6 +30,11 @@
 
 .hide {
   @include media-qry(med) {
-    visibility: hidden;
+    display: none;
   }
+}
+
+.copyright {
+  text-align: right;
+  color: $darkgrey;
 }

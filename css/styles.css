@@ -351,7 +351,6 @@ template {
 
 body {
   font-family: "Fira Sans", sans-serif;
-  color: #30011E;
 }
 
 .mobile-header {
@@ -371,6 +370,9 @@ body {
     display: none;
   }
 }
+.mobile-header-resume {
+  margin-bottom: 30px;
+}
 @media (min-width: 768px) {
   .mobile-header-resume {
     display: none;
@@ -380,40 +382,12 @@ body {
 .title {
   text-align: center;
   display: none;
+  color: #4C7544;
 }
 
-.navbar {
-  margin-bottom: 0;
-}
-
-.nav {
-  border-radius: 5px;
-  width: 95%;
-  margin: 0 auto;
-  padding: 20px 10px;
-}
-@media (min-width: 768px) {
-  .nav {
-    background-color: #545454;
-    opacity: 0.9;
-  }
-}
-
-.coll-custom {
-  position: absolute;
-  left: 0;
-  top: 100%;
-}
-
-.navbar1 {
-  visibility: hidden;
-}
-@media (min-width: 768px) {
-  .navbar1 {
-    visibility: visible;
-    opacity: 0.6;
-    transition: opacity 2.4s ease-in-out;
-  }
+.burger {
+  font-size: 30px;
+  box-shadow: 0 3px 3px 0 #88AE70;
 }
 
 .overlay {
@@ -423,9 +397,9 @@ body {
   z-index: 1;
   left: 0;
   top: 0;
-  background-color: #30011E;
+  background-color: #4C7544;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 .overlay-content {
@@ -437,7 +411,7 @@ body {
 }
 
 .overlay a {
-  padding: 8px;
+  padding: 48px;
   text-decoration: none;
   font-size: 30px;
   display: block;
@@ -510,8 +484,6 @@ body {
   .desktop-home {
     text-align: center;
     padding: 15px;
-    border-radius: 20%;
-    border-right: 2px solid #30011E;
   }
 }
 .desktop-contact {
@@ -521,8 +493,6 @@ body {
   .desktop-contact {
     text-align: center;
     padding: 15px;
-    border-radius: 20%;
-    border-right: 2px solid #30011E;
   }
 }
 .desktop-about {
@@ -532,14 +502,12 @@ body {
   .desktop-about {
     text-align: center;
     padding: 15px;
-    border-radius: 20%;
-    border-right: 2px solid #30011E;
   }
 }
 
 .project-link {
-  background-color: grey;
-  margin-left: 4em;
+  background-color: #4C7544;
+  margin-left: 4.5em;
 }
 
 .container {
@@ -560,6 +528,7 @@ body {
 .card-contact {
   width: 100%;
   margin: 10px auto;
+  padding: 10px;
 }
 @media (min-width: 768px) {
   .card-contact {
@@ -567,20 +536,22 @@ body {
     width: 40%;
   }
 }
-.card-text {
-  margin: 5px 0 40px 0;
+.card-title {
+  font-weight: bolder;
+  color: #0b0a0a;
 }
 .card-text-two {
   margin: 30px 0;
+  color: #30011E;
 }
 .card-projects {
-  height: 480px;
+  height: 500px;
   width: 500px;
-  margin: 0 auto;
+  margin: 50px auto;
 }
 
 .break {
-  background-color: #30011E;
+  background-color: #88AE70;
 }
 @media (min-width: 768px) {
   .break {
@@ -624,8 +595,13 @@ body {
 
 @media (min-width: 768px) {
   .hide {
-    visibility: hidden;
+    display: none;
   }
+}
+
+.copyright {
+  text-align: right;
+  color: #545454;
 }
 
 .links {
@@ -667,18 +643,19 @@ body {
   }
 }
 .link-contact a {
+  color: #88AE70;
   padding: 5px;
-  border-radius: 10px;
 }
-@media (min-width: 768px) {
-  .link-contact a {
-    color: #545454;
+@media (min-width: 1024px) {
+  .link-contact a:hover {
+    color: #4C7544;
   }
 }
 
 .home {
   font-size: 1.8em;
   text-align: center;
+  font-weight: bolder;
 }
 
 .bio {
@@ -709,6 +686,7 @@ body {
   height: 30px;
   border-radius: 10px;
   padding: 5px 5px;
+  background-color: #88AE70;
 }
 @media (min-width: 768px) {
   .skills-icons {
@@ -779,6 +757,11 @@ body {
     height: 475px;
     margin-left: 30%;
   }
+}
+
+.project-img {
+  width: 100%;
+  height: 350px;
 }
 
 /*# sourceMappingURL=styles.css.map */
