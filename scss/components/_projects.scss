@@ -6,3 +6,10 @@
 .block-color {
   // background: $olive;
 }
+
+.btn {
+  color: white;
+  &:hover {
+    color: $maroon;
+  }
+}

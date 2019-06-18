@@ -46,13 +46,16 @@
     }
   }
   &-about {
-    margin-top: 7em;
 
     @include media-qry(med) {
       margin-top: 0;
       display: block;
       overflow-y: scroll;
       height: 100vh;
+    }
+    @include media-qry(large) {
+      width: 90%;
+      margin: 0 auto;
     }
   }
 }

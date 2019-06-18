@@ -2,13 +2,9 @@
   width: 20px;
   height: 20px;
   margin: 5px 10px;
-  @include media-qry(med) {
-    margin: 110px 10px 10px 10px;
-  }
   @include media-qry(large) {
     width: 30px;
     height: 30px;
-    margin: 120px 15px 15px 15px;
     transition: transform 0.2s ease-in-out;
     &:hover {
       transform: scale(1.2);
@@ -17,11 +13,14 @@
 }
 
 .profile-pic {
-  // float: right;
+  width: 230px;
+  height: 280px;
+  text-align: center;
+  margin-left: 10%;
+  // margin: 0 auto;
   @include media-qry(med) {
-    width: 200px;
-    height: 205px;
-    float: none;
+    width: 250px;
+    height: 325px;
     margin-left: 25%;
   }
   @include media-qry(large) {

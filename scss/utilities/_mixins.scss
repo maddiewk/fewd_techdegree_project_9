@@ -21,3 +21,12 @@
     }
   }
 }
+
+@mixin create-title {
+    font-weight: bolder;
+    font-family: 'Special Elite', cursive;
+    @include media-qry(large) {
+      font-size: 22px;
+      margin: 25px 10px;
+    }
+}

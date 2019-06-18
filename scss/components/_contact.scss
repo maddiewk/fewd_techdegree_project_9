@@ -1,48 +1,59 @@
 .container {
   width: 100%;
   &-contact {
-    margin-top: 7em;
     @include media-qry(med) {
       margin-top: 0;
-      @include flexbox;
     }
   }
 }
 
+.section {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 0 15px 0;
+  @include media-qry(large) {
+    margin: 2em 0 0.8em 0;
+    align-items: center;
+  }
+}
+
+.page-title {
+  @include create-title;
+
+}
+
+
 .card {
   &-body-contact {
-
+    width: 100%;
     & a {
       @extend %no-underline;
     }
-  }
-  &-contact {
-    // border: none;
-    width: 100%;
-    margin: 10px auto;
-    padding: 10px;
-    @include media-qry(med) {
-      max-width: 100%;
-      // @include flexbox;
-      // flex-direction: column;
-      // align-items: center;
-      // align-content: space-around;
-      width: 40%;
-      // min-height: 400px;
-      // border: 1px solid $highlight;
-      // border: 2px solid $maroon;
+    @include media-qry(large) {
+      display: flex;
+      justify-content: space-around;
     }
   }
-  &-text {
-    // margin: 5px 0 40px 0;
+  &-contact {
+    border: none;
+    display: flex;
+    margin: 10px auto;
+    padding: 10px;
   }
+  // &-text {
+  //   margin: 5px 0 40px 0;
+  // }
   &-title {
     font-weight: bolder;
     color: $black;
   }
   &-text-two {
-    margin: 30px 0;
     color: $maroon;
+    display: inline;
+    @include media-qry(med) {
+      width: 100%;
+      margin-left: 3em;
+    }
   }
   &-projects {
     height: 500px;
@@ -51,12 +62,46 @@
   }
 }
 
-.break {
-  background-color: $olive;
-  @include media-qry(med) {
-    width: 100%;
-    margin: 5px;
+.contact-form {
+  padding: 10px;
+  @include media-qry(large) {
+    text-align: center;
   }
+}
+
+.group {
+  margin: 10px 0;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid $maroon;
+  border-radius: 2px;
+  width: 100%;
+  @include media-qry(large) {
+    width: 60%;
+
+  }
+  &-large {
+    resize: none;
+    height: 150px;
+  }
+  &-submit {
+    width: 40%;
+    background-color: $darkolive;
+    color: white;
+    &:hover {
+      cursor: pointer;
+      background-color: $olive;
+    }
+  }
+}
+
+.socials {
+  margin: 20px auto;
+  width: 50%;
+  @include flexbox;
+  justify-content: space-between;
 }
 
 #fade {
