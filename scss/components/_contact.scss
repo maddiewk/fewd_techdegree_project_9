@@ -6,7 +6,7 @@
     }
     @include media-qry(large) {
       width: 100%;
-      margin-right: -100%;
+      // margin-right: -100%;
     }
   }
 }
@@ -23,7 +23,6 @@
 
 .page-title {
   @include create-title;
-
 }
 
 
@@ -48,12 +47,10 @@
     @include media-qry(med) {
       height: 100px;
       margin: 15px 0;
-      border: 3px solid red;
     }
   }
   &-title {
     @include media-qry(med) {
-      border: 2px solid purple;
       height: 50px;
     }
   }
@@ -69,19 +66,18 @@
     height: 100%;
     width: 100%;
     margin: 30px auto;
-    // border: 4px solid red;
+    padding: 10px 5px;
+    // background-color: $background3;
+    border-radius: 5px;
     @include media-qry(med) {
-      // border: 4px solid green;
-      // margin: 10px;
-      width: 48%;
-      height: 350px;
+      width: 90%;
+      height: auto;
     }
   }
   &-body {
-    border: 3px solid pink;
     @include media-qry(med) {
-      height: 320px;
-      // display: none;
+      height: 300px;
+      width: 320px;
     }
   }
 }
@@ -114,10 +110,16 @@
     width: 40%;
     background-color: $darkolive;
     color: white;
-    margin-left: 8em;
+    margin-left: 30%;
     &:hover {
       cursor: pointer;
       background-color: $olive;
+    }
+    @include media-qry(med) {
+      margin-left: 28%;
+    }
+    @include media-qry(large) {
+      margin-left: 0;
     }
   }
 }
@@ -130,11 +132,17 @@
 }
 
 #fade {
-  // display: none;
-  // position: absolute;
+  @include media-qry(large) {
+    // display: none;
+    width: 100%;
+    margin-right: -100%;
+    // position: absolute;
+  }
 }
 
 
 .wrapper {
-  overflow-x: hidden;
+  @include media-qry(large) {
+    overflow-x: hidden;
+  }
 }

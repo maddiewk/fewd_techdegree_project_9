@@ -508,7 +508,9 @@ h5 {
 
 .project-link {
   background-color: #4C7544;
-  margin-left: 4.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
 }
 @media (min-width: 768px) {
   .project-link {
@@ -529,18 +531,7 @@ h5 {
   .project-container {
     position: relative;
     width: 50%;
-    border: 3px solid grey;
-  }
-}
-
-@media (min-width: 768px) {
-  .image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: 0.5s ease;
-    backface-visibility: hidden;
+    height: 65%;
   }
 }
 
@@ -558,7 +549,7 @@ h5 {
 }
 
 @media (min-width: 768px) {
-  .project-container:hover .image {
+  .project-container:hover .project-img {
     opacity: 0.2;
   }
 }
@@ -566,14 +557,6 @@ h5 {
 @media (min-width: 768px) {
   .project-container:hover .middle {
     opacity: 1;
-  }
-}
-
-@media (min-width: 768px) {
-  .text {
-    color: red;
-    font-size: 16px;
-    padding: 16px 32px;
   }
 }
 
@@ -588,7 +571,6 @@ h5 {
 @media (min-width: 1024px) {
   .container-contact {
     width: 100%;
-    margin-right: -100%;
   }
 }
 
@@ -607,12 +589,6 @@ h5 {
 .page-title {
   font-weight: bolder;
   font-family: "Special Elite", cursive;
-}
-@media (min-width: 1024px) {
-  .page-title {
-    font-size: 22px;
-    margin: 25px 10px;
-  }
 }
 
 .card-body-contact {
@@ -634,12 +610,10 @@ h5 {
   .card-text {
     height: 100px;
     margin: 15px 0;
-    border: 3px solid red;
   }
 }
 @media (min-width: 768px) {
   .card-title {
-    border: 2px solid purple;
     height: 50px;
   }
 }
@@ -657,19 +631,19 @@ h5 {
   height: 100%;
   width: 100%;
   margin: 30px auto;
+  padding: 10px 5px;
+  border-radius: 5px;
 }
 @media (min-width: 768px) {
   .card-projects {
-    width: 48%;
-    height: 350px;
+    width: 90%;
+    height: auto;
   }
-}
-.card-body {
-  border: 3px solid pink;
 }
 @media (min-width: 768px) {
   .card-body {
-    height: 320px;
+    height: 300px;
+    width: 320px;
   }
 }
 
@@ -705,11 +679,21 @@ h5 {
   width: 40%;
   background-color: #4C7544;
   color: white;
-  margin-left: 8em;
+  margin-left: 30%;
 }
 .input-submit:hover {
   cursor: pointer;
   background-color: #88AE70;
+}
+@media (min-width: 768px) {
+  .input-submit {
+    margin-left: 28%;
+  }
+}
+@media (min-width: 1024px) {
+  .input-submit {
+    margin-left: 0;
+  }
 }
 
 .socials {
@@ -721,8 +705,17 @@ h5 {
   justify-content: space-between;
 }
 
-.wrapper {
-  overflow-x: hidden;
+@media (min-width: 1024px) {
+  #fade {
+    width: 100%;
+    margin-right: -100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    overflow-x: hidden;
+  }
 }
 
 .footer-resume {
@@ -732,6 +725,7 @@ h5 {
   justify-content: space-between;
   margin-top: 10px;
   padding: 10px;
+  width: 100%;
 }
 .footer-resume p {
   color: #30011E;
@@ -739,18 +733,9 @@ h5 {
 @media (min-width: 768px) {
   .footer-resume {
     font-size: 0.8em;
-  }
-}
-.footer-sticky {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-@media (min-width: 1024px) {
-  .footer-sticky {
-    text-align: left;
+    display: block;
+    text-align: right;
+    margin-left: auto;
   }
 }
 
@@ -883,11 +868,6 @@ h5 {
 @media (min-width: 768px) {
   .scroll-dsktop {
     margin-top: 0;
-    border: 5px solid yellow;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
     overflow-y: scroll;
     height: 100vh;
   }
@@ -906,16 +886,33 @@ h5 {
     margin: 0 auto;
   }
 }
+.scroll-projects {
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .scroll-projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-y: scroll;
+    height: 100vh;
+  }
+}
 
 .social-icon {
   width: 27px;
   height: 27px;
   margin: 15px 10px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .social-icon {
     width: 30px;
     height: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .social-icon {
     transition: transform 0.2s ease-in-out;
   }
   .social-icon:hover {
@@ -958,14 +955,21 @@ h5 {
 
 .project-img {
   width: 100%;
-  height: 350px;
+  height: 210px;
+  margin: 0 auto;
+}
+@media (min-width: 425px) {
+  .project-img {
+    height: 270px;
+  }
 }
 @media (min-width: 768px) {
   .project-img {
     width: 95%;
-    height: 250px;
-    border: 2px solid blue;
     margin: 0 auto;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
   }
 }
 

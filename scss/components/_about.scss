@@ -40,11 +40,6 @@
     // margin-top: 0;
     @include media-qry(med) {
       margin-top: 0;
-      border: 5px solid yellow;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-around;
       overflow-y: scroll;
       height: 100vh;
     }
@@ -61,5 +56,17 @@
       width: 90%;
       margin: 0 auto;
     }
+  }
+  &-projects {
+    margin-top: 30px;
+    @include media-qry(med) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      overflow-y: scroll;
+      height: 100vh;
+    }
+
   }
 }

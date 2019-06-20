@@ -5,6 +5,7 @@
     justify-content: space-between;
     margin-top: 10px;
     padding: 10px;
+    width: 100%;
     & p {
       color: $maroon;
     }
@@ -13,18 +14,10 @@
     }
     @include media-qry(med) {
       font-size: 0.8em;
+      display: block;
+      text-align: right;
+      margin-left: auto;
     }
-  }
-  &-sticky {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   // padding: 10px;
-   width: 100%;
-   text-align: center;
-   @include media-qry(large) {
-     text-align: left;
-   }
   }
 }
 

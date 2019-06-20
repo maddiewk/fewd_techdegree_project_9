@@ -1,6 +1,9 @@
 .project-link {
   background-color: $darkolive;
-  margin-left: 4.5em;
+  // margin-left: 4.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 5px 0;
   @include media-qry(med) {
     margin: 10px 0;
     display: flex;
@@ -16,25 +19,11 @@
 }
 
 
-
-
 .project-container {
   @include media-qry(med) {
     position: relative;
     width: 50%;
-    border: 3px solid grey;
-  }
-
-}
-
-.image {
-  @include media-qry(med) {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    height: 65%;
   }
 
 }
@@ -52,22 +41,15 @@
   }
 }
 
-.project-container:hover .image {
+.project-container:hover .project-img {
   @include media-qry(med) {
     opacity: 0.2;
+
   }
 }
 
 .project-container:hover .middle {
   @include media-qry(med) {
     opacity: 1;
-  }
-}
-
-.text {
-  @include media-qry(med) {
-    color: red;
-    font-size: 16px;
-    padding: 16px 32px;
   }
 }

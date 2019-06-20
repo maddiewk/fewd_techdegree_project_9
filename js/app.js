@@ -3,7 +3,6 @@ $(document).ready(function() {
   $('#fade2').fadeIn(6000);
   // $('#fade').animate({left: '150px'}, 500);
   $('#fade').animate({'margin-right': 0}, 'slow');
-
 });
 
 function openNav() {
@@ -23,8 +22,8 @@ $('.closebtn').on('click', function() {
 });
 
 // load separate content without reloading the entire page?
-
-const contentWrapper = document.querySelector('.testport');
-$('.testabout').on('click', function() {
-  contentWrapper.innerHTML = about;
-});
+//
+// const contentWrapper = document.querySelector('.testport');
+// $('.testabout').on('click', function() {
+//   contentWrapper.innerHTML = about;
+// });
