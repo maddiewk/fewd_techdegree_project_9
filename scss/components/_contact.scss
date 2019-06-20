@@ -4,6 +4,10 @@
     @include media-qry(med) {
       margin-top: 0;
     }
+    @include media-qry(large) {
+      width: 100%;
+      margin-right: -100%;
+    }
   }
 }
 
@@ -40,12 +44,18 @@
     margin: 10px auto;
     padding: 10px;
   }
-  // &-text {
-  //   margin: 5px 0 40px 0;
-  // }
+  &-text {
+    @include media-qry(med) {
+      height: 100px;
+      margin: 15px 0;
+      border: 3px solid red;
+    }
+  }
   &-title {
-    font-weight: bolder;
-    color: $black;
+    @include media-qry(med) {
+      border: 2px solid purple;
+      height: 50px;
+    }
   }
   &-text-two {
     color: $maroon;
@@ -56,9 +66,23 @@
     }
   }
   &-projects {
-    height: 500px;
-    width: 500px;
-    margin: 50px auto;
+    height: 100%;
+    width: 100%;
+    margin: 30px auto;
+    // border: 4px solid red;
+    @include media-qry(med) {
+      // border: 4px solid green;
+      // margin: 10px;
+      width: 48%;
+      height: 350px;
+    }
+  }
+  &-body {
+    border: 3px solid pink;
+    @include media-qry(med) {
+      height: 320px;
+      // display: none;
+    }
   }
 }
 
@@ -90,6 +114,7 @@
     width: 40%;
     background-color: $darkolive;
     color: white;
+    margin-left: 8em;
     &:hover {
       cursor: pointer;
       background-color: $olive;
@@ -105,5 +130,11 @@
 }
 
 #fade {
-  display: none;
+  // display: none;
+  // position: absolute;
+}
+
+
+.wrapper {
+  overflow-x: hidden;
 }

@@ -40,7 +40,11 @@
     // margin-top: 0;
     @include media-qry(med) {
       margin-top: 0;
-      display: block;
+      border: 5px solid yellow;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
       overflow-y: scroll;
       height: 100vh;
     }

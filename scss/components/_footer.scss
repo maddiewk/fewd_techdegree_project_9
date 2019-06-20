@@ -37,8 +37,11 @@
 .copyright {
   text-align: right;
   color: $maroon;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-style: italic;
+  @include media-qry(med) {
+    font-size: 0.8em;
+  }
   @include media-qry(large) {
     font-size: 0.9em;
   }

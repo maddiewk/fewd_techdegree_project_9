@@ -1,15 +1,73 @@
 .project-link {
   background-color: $darkolive;
   margin-left: 4.5em;
-}
-
-.block-color {
-  // background: $olive;
+  @include media-qry(med) {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .btn {
   color: white;
   &:hover {
     color: $maroon;
+  }
+}
+
+
+
+
+.project-container {
+  @include media-qry(med) {
+    position: relative;
+    width: 50%;
+    border: 3px solid grey;
+  }
+
+}
+
+.image {
+  @include media-qry(med) {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+
+}
+
+.middle {
+  @include media-qry(med) {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+.project-container:hover .image {
+  @include media-qry(med) {
+    opacity: 0.2;
+  }
+}
+
+.project-container:hover .middle {
+  @include media-qry(med) {
+    opacity: 1;
+  }
+}
+
+.text {
+  @include media-qry(med) {
+    color: red;
+    font-size: 16px;
+    padding: 16px 32px;
   }
 }

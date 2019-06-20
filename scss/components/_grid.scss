@@ -59,6 +59,7 @@
     display: none;
     @include media-qry(med) {
       text-align: center;
+      height: 100vh;
       // grid-column: 1 / 2;
       // grid-row: 1 / 5;
       padding: 15px;

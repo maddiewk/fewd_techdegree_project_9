@@ -390,7 +390,8 @@ h5 {
 }
 
 .burger {
-  font-size: 30px;
+  font-size: 27px;
+  margin: 10px 10px 0 10px;
   box-shadow: 0 3px 3px 0 #88AE70;
 }
 
@@ -491,6 +492,7 @@ h5 {
 @media (min-width: 768px) {
   .desktop-contact {
     text-align: center;
+    height: 100vh;
     padding: 15px;
   }
 }
@@ -508,6 +510,13 @@ h5 {
   background-color: #4C7544;
   margin-left: 4.5em;
 }
+@media (min-width: 768px) {
+  .project-link {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .btn {
   color: white;
@@ -516,12 +525,70 @@ h5 {
   color: #30011E;
 }
 
+@media (min-width: 768px) {
+  .project-container {
+    position: relative;
+    width: 50%;
+    border: 3px solid grey;
+  }
+}
+
+@media (min-width: 768px) {
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) {
+  .middle {
+    transition: 0.5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-container:hover .image {
+    opacity: 0.2;
+  }
+}
+
+@media (min-width: 768px) {
+  .project-container:hover .middle {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .text {
+    color: red;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+}
+
 .container {
   width: 100%;
 }
 @media (min-width: 768px) {
   .container-contact {
     margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .container-contact {
+    width: 100%;
+    margin-right: -100%;
   }
 }
 
@@ -563,9 +630,18 @@ h5 {
   margin: 10px auto;
   padding: 10px;
 }
-.card-title {
-  font-weight: bolder;
-  color: #0b0a0a;
+@media (min-width: 768px) {
+  .card-text {
+    height: 100px;
+    margin: 15px 0;
+    border: 3px solid red;
+  }
+}
+@media (min-width: 768px) {
+  .card-title {
+    border: 2px solid purple;
+    height: 50px;
+  }
 }
 .card-text-two {
   color: #30011E;
@@ -578,9 +654,23 @@ h5 {
   }
 }
 .card-projects {
-  height: 500px;
-  width: 500px;
-  margin: 50px auto;
+  height: 100%;
+  width: 100%;
+  margin: 30px auto;
+}
+@media (min-width: 768px) {
+  .card-projects {
+    width: 48%;
+    height: 350px;
+  }
+}
+.card-body {
+  border: 3px solid pink;
+}
+@media (min-width: 768px) {
+  .card-body {
+    height: 320px;
+  }
 }
 
 .contact-form {
@@ -615,6 +705,7 @@ h5 {
   width: 40%;
   background-color: #4C7544;
   color: white;
+  margin-left: 8em;
 }
 .input-submit:hover {
   cursor: pointer;
@@ -630,8 +721,8 @@ h5 {
   justify-content: space-between;
 }
 
-#fade {
-  display: none;
+.wrapper {
+  overflow-x: hidden;
 }
 
 .footer-resume {
@@ -672,8 +763,13 @@ h5 {
 .copyright {
   text-align: right;
   color: #30011E;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-style: italic;
+}
+@media (min-width: 768px) {
+  .copyright {
+    font-size: 0.8em;
+  }
 }
 @media (min-width: 1024px) {
   .copyright {
@@ -787,7 +883,11 @@ h5 {
 @media (min-width: 768px) {
   .scroll-dsktop {
     margin-top: 0;
-    display: block;
+    border: 5px solid yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     overflow-y: scroll;
     height: 100vh;
   }
@@ -808,9 +908,9 @@ h5 {
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
-  margin: 5px 10px;
+  width: 27px;
+  height: 27px;
+  margin: 15px 10px;
 }
 @media (min-width: 1024px) {
   .social-icon {
@@ -819,7 +919,19 @@ h5 {
     transition: transform 0.2s ease-in-out;
   }
   .social-icon:hover {
-    transform: scale(1.2);
+    transform: scale(1.4);
+  }
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin: 5px 10px;
+}
+@media (min-width: 1024px) {
+  .contact-icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
@@ -847,6 +959,14 @@ h5 {
 .project-img {
   width: 100%;
   height: 350px;
+}
+@media (min-width: 768px) {
+  .project-img {
+    width: 95%;
+    height: 250px;
+    border: 2px solid blue;
+    margin: 0 auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,14 +1,24 @@
 .social-icon {
+  width: 27px;
+  height: 27px;
+  margin: 15px 10px;
+  @include media-qry(large) {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+}
+
+.contact-icon {
   width: 20px;
   height: 20px;
   margin: 5px 10px;
   @include media-qry(large) {
     width: 30px;
     height: 30px;
-    transition: transform 0.2s ease-in-out;
-    &:hover {
-      transform: scale(1.2);
-    }
   }
 }
 
@@ -35,4 +45,10 @@
   height: 350px;
   // padding: 10px;
   // margin-bottom: 15px;
+  @include media-qry(med) {
+    width: 95%;
+    height: 250px;
+    border: 2px solid blue;
+    margin: 0 auto;
+  }
 }
