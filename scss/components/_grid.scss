@@ -27,16 +27,7 @@
       grid-template-rows: auto;
       grid-column-gap: 0px;
       grid-row-gap: 0px;
-    }
-  }
-  &-contact {
-    @include media-qry(med) {
-      @include grid;
-      grid-template-columns: 200px 1fr;
-      grid-template-rows: auto;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      height: 100vh;
+      // height: 100vh;
     }
   }
 }

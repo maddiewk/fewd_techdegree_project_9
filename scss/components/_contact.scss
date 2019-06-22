@@ -6,7 +6,6 @@
     }
     @include media-qry(large) {
       width: 100%;
-      // margin-right: -100%;
     }
   }
 }
@@ -23,6 +22,13 @@
 
 .page-title {
   @include create-title;
+  &-skill {
+    margin-top: 15px;
+    @include media-qry(large) {
+      margin-top: 10px;
+      font-size: 1em;
+    }
+  }
 }
 
 
@@ -67,7 +73,6 @@
     width: 100%;
     margin: 30px auto;
     padding: 10px 5px;
-    // background-color: $background3;
     border-radius: 5px;
     @include media-qry(med) {
       width: 90%;
@@ -98,9 +103,11 @@
   border: 1px solid $maroon;
   border-radius: 2px;
   width: 100%;
+  &:focus {
+    outline-color: $darkolive;
+  }
   @include media-qry(large) {
     width: 60%;
-
   }
   &-large {
     resize: none;
@@ -125,24 +132,54 @@
 }
 
 .socials {
-  margin: 20px auto;
-  width: 50%;
   @include flexbox;
-  justify-content: space-between;
+  justify-content: space-around;
+  @include media-qry(med) {
+    margin: 20px auto;
+    width: 50%;
+    justify-content: space-between;
+  }
+
 }
 
 #fade {
-  @include media-qry(large) {
-    // display: none;
-    width: 100%;
-    margin-right: -100%;
-    // position: absolute;
+  @include media-qry(med) {
+    display: none;
   }
 }
-
 
 .wrapper {
   @include media-qry(large) {
     overflow-x: hidden;
   }
+}
+
+.alert-hidden {
+  // visibility: hidden;
+}
+
+.alert-message {
+  margin-left: 10%;
+  width: 100%;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 7px;
+  @include media-qry(sm) {
+    margin-left: 5em;
+  }
+  @include media-qry(med) {
+    margin-left: 28%;
+  }
+  @include media-qry(large) {
+    margin: 0;
+  }
+}
+
+.success-message {
+  width: 100%;
+  background-color: $olive;
+  color: white;
+  padding: 5px;
+  border-radius: 7px;
 }

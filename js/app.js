@@ -1,8 +1,6 @@
 $(document).ready(function() {
-  // $('#fade').fadeIn(1800);
+  $('#fade').fadeIn(1800);
   $('#fade2').fadeIn(6000);
-  // $('#fade').animate({left: '150px'}, 500);
-  $('#fade').animate({'margin-right': 0}, 'slow');
 });
 
 function openNav() {
@@ -21,9 +19,26 @@ $('.closebtn').on('click', function() {
   closeNav();
 });
 
-// load separate content without reloading the entire page?
-//
-// const contentWrapper = document.querySelector('.testport');
-// $('.testabout').on('click', function() {
-//   contentWrapper.innerHTML = about;
-// });
+// form validation for contact page
+
+$appendDiv = $('#dynamic');
+$name = $('.name');
+$email = $('.email');
+$phone = $('.phone');
+$message = $('.input-large');
+
+$('.input-submit').on('click', function(e) {
+  e.preventDefault();
+  $appendDiv.css('display', 'block');
+  $appendDiv.html('');
+  if ($name.val() === '' || $email.val() === '' || $message.val() === '') {
+    $appendDiv.delay(3000).append(`<span class="alert-message">Please fill in required fields.</span>`).slideDown(1500).removeClass('alert-hidden').hide(1000);
+  } else {
+    $appendDiv.delay(3000).append(`<span class="success-message">Your message has been sent.</span>`).slideDown(1500).removeClass('alert-hidden').hide(1000);
+    $name.val('');
+    $email.val('');
+    $phone.val('');
+    $message.val('');
+  }
+
+});
