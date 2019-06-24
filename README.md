@@ -1,3 +1,1 @@
-Treehouse Front-End Web Development Techdegree
-Capstone Project
-Madeline Keesling's Portfolio
+Treehouse front-end web development techdegree | Capstone Portfolio
