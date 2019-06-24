@@ -22,6 +22,7 @@
 
 .page-title {
   @include create-title;
+  color: $maroon;
   &-skill {
     margin-top: 15px;
     @include media-qry(large) {
@@ -142,10 +143,8 @@
 
 }
 
-#fade {
-  @include media-qry(med) {
-    display: none;
-  }
+.fadePage {
+  display: none;
 }
 
 .wrapper {

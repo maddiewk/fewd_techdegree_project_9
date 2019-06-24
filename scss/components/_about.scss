@@ -48,7 +48,6 @@
 
     @include media-qry(med) {
       margin-top: 0;
-      display: block;
       overflow-y: scroll;
       height: 100vh;
     }

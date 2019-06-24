@@ -21,18 +21,31 @@
 .title {
   text-align: center;
   display: none;
-  color: $darkolive;
   margin-top: 50px;
+  &-dsktop {
+    display: none;
+    @include media-qry(med) {
+      display: block;
+      margin-top: 50px;
+      margin-right: 30px;
+      text-align: right;
+    }
+    @include media-qry(large) {
+      text-align: center;
+      margin-top: 80px;
+    }
+  }
 }
 
 .burger {
   font-size: 27px;
   margin: 10px 10px 0 10px;
   box-shadow: 0 3px 3px 0 $olive;
+  background-color: white;
 }
 
 
-// testing out new mobile menu options
+// mobile menu
 .overlay {
   height: 100%;
   width: 0;

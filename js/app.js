@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $('#fade').fadeIn(1800);
-  $('#fade2').fadeIn(6000);
+  $('.fadePage').fadeIn(1800);
+  $('#fade2').fadeIn(4000); 
 });
 
 function openNav() {
