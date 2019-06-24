@@ -37,7 +37,6 @@
 .scroll {
 
   &-dsktop {
-    // margin-top: 0;
     @include media-qry(med) {
       margin-top: 0;
       overflow-y: scroll;
