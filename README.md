@@ -1,1 +1,3 @@
-# fewd_techdegree_project_9
+Treehouse Front-End Web Development Techdegree
+Capstone Project
+Madeline Keesling's Portfolio
